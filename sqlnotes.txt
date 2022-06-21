@@ -1,0 +1,49 @@
+make sure to follow this for your mysql configuration
+
+***important***
+user: "root",
+password: "password",
+database: "backend_crud",
+
+**make sure you are using root and password as "password" (or you can modify in in mysql configuration in userController.js)
+
+----------------------------------------------------------------------------------
+
+For manual creation of database, table, and dummy data...
+
+-Name the connection as 'localhost'
+
+-Create a schema named'backend_crud'
+  "CREATE SCHEMA `backend_crud` ;"
+
+-Create table and columns
+  "CREATE TABLE `backend_crud2`.`users_table` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `first_name` VARCHAR(100) NOT NULL,
+  `last_name` VARCHAR(100) NOT NULL,
+  `address` VARCHAR(200) NOT NULL,
+  `postcode` VARCHAR(50) NOT NULL,
+  `contact_phone_number` VARCHAR(50) NOT NULL,
+  `email` VARCHAR(100) NOT NULL,
+  `username` VARCHAR(50) NOT NULL,
+  `password` VARCHAR(50) NOT NULL,
+  PRIMARY KEY (`id`));"
+
+-Inserting dummy data 
+  "INSERT INTO users_table (first_name, last_name, address, postcode, contact_phone_number, email, username, password) VALUES ('Philip Deniel', 'Follero', 'Sariaya, Quezon', '4322', '+639663470640', 'nielfollero0420@gmail.com', 'nielfollero', 'Password@123');"
+
+  "INSERT INTO users_table (first_name, last_name, address, postcode, contact_phone_number, email, username, password) VALUES ('Eileen', 'Dover', 'Quezon City', 'WU412', '+639661234123', 'eileendover@gmail.com', 'eileendover', 'Password@1');"
+
+  "INSERT INTO users_table (first_name, last_name, address, postcode, contact_phone_number, email, username, password) VALUES ('Sylvia', 'Trench', 'Lanao del Norte', 'ZS523', '+639661858882', 'sylviatrench0420@gmail.com', 'sylviatrench', 'Password@2');"
+
+  "INSERT INTO users_table (first_name, last_name, address, postcode, contact_phone_number, email, username, password) VALUES ('Lois', 'Lane', 'Negros Oriental', '52SE3', '+639665829385', 'loislane@gmail.com', 'loislane', 'Password@3');"
+
+  "INSERT INTO users_table (first_name, last_name, address, postcode, contact_phone_number, email, username, password) VALUES ('Penelope', 'Smallbone', 'Caloocan City', '42RW3', '+639669682734', 'penelope@gmail.com', 'penelope', 'Password@4');"
+  
+
+
+
+
+
+
+
