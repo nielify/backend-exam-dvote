@@ -6,3 +6,5 @@ Follow these steps to run this server
 ### npm run dev
 
 Note that this requires npm installed on your computer
+
+**see database.sql and sqlnotes.txt for mysql database setup
